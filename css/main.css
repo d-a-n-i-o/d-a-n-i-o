@@ -1,1 +1,1057 @@
-body {background-color: #F8F7FC;}
+/* ========== HOME PAGE STYLES ========== */
+
+/*  
+General Reset (Source: Mozilla MDN - Box Sizing & Margin Reset)  
+https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing  
+*/
+
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Typography (Taught by Paul Brokenshire - CSS Typography Basics) */
+h1, h2, h3, .logo {
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+}
+
+body, p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+/* Body Styling (Taught by Paul Brokenshire - CSS Styling Basics) */
+body {
+    background-color: #f3efff; /* Soft lavender */
+    color: #2c134d; /* Deep purple */
+    padding: 40px;
+}
+
+/*   Header, Projects and Footer used Flexbox Layout (Source: CSS-Tricks - A Guide to Flexbox)  
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/  */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px 40px;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 30px; /* Adds space between logo and nav */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    color:#2c134d
+}
+
+/* Navigation Links */ /* Navigation Styling (Source: Mozilla MDN - CSS Navigation Links)  
+https://developer.mozilla.org/en-US/docs/Web/CSS/:hover  
+/*  
+Button Styling (Source: Mozilla MDN - Styling Buttons with CSS)  
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Buttons  
+*/
+
+/* Default Navigation Links - No Underline */
+nav ul li a {
+    text-decoration: none;  
+    color: #2c134d;  
+    font-weight: bold;
+}
+
+/* Ensure visited links remain the same color */
+nav ul li a:visited {
+    color: #2c134d;  
+    text-decoration: none;  
+}
+
+/* Adds underline on hover */
+nav ul li a:hover {
+    text-decoration: underline;  
+}
+
+nav ul li a.active {
+    text-decoration: underline;  
+    font-weight: bold;
+    color: #2c134d;
+}
+
+nav ul li a.active:visited {
+    color: #2c134d;
+    text-decoration: underline;
+}
+
+/* Ensures all links do not inherit unwanted browser styling */
+/* (Source: Mozilla MDN - CSS Links) */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/:link */
+
+a {
+    text-decoration: none !important;
+    color: inherit;
+}
+/* ========== HERO SECTION ========== */
+.hero {
+    max-width: 1000px;
+    margin: 40px auto;
+    text-align: left;
+    padding: 0 40px;
+}
+
+.hero h1 {
+    font-size: 43px;
+    font-weight: 700;
+    max-width: 1000px; /* Matches divider width */
+    margin-bottom: 40px; /* Increased spacing */
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    max-width: 600px; /* Keeps text compact */
+}
+
+/* ========== BUTTON ========== */
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    background: transparent;
+    border: 2px solid #2c134d;
+    color: #2c134d;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background: #2c134d;
+    color: #fff;
+}
+
+/* ========== DIVIDER ========== */
+.divider {
+    border-bottom: 1px solid #2c134d;
+    max-width: calc(1100px - 80px); /* Matches header width */
+    width: 100%; /* Keeps it responsive */
+    margin: 40px auto;
+    padding: 0 40px; /* Aligns with the nav/header */
+    box-sizing: border-box; /* Prevents unwanted width expansion */
+}
+
+/* ========== RECENT PROJECTS ========== */
+/* Project Layout (Source: CSS-Tricks - A Guide to Flexbox)  
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+/* Mobile-Friendly Layout Adjustments (Sources: MDN - CSS Flexbox & Grid, A List Apart)  
+   https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout  
+   https://developer.mozilla.org/en-US/docs/Web/CSS/grid  
+   https://alistapart.com/article/responsive-web-design/ */
+
+.recent-projects {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.recent-projects h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+/* Project Styling */
+.project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Text Side */
+.project-info {
+    flex: 1;
+    text-align: left;
+}
+
+.project-info h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.project-info .project-subtitle {
+    font-weight: bold;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.project-info p {
+    margin-bottom: 15px;
+}
+
+/* Image Side */
+.project-image img {
+    width: 450px;
+    height: 269px;
+    border-radius: 32px;
+}
+
+/* ========== VIEW ALL PROJECTS LINK ========== */
+.view-all {
+    display: block;
+    text-align: left;
+    margin-top: 40px;
+    text-decoration: none;
+    color: #2c134d;
+    font-weight: bold;
+}
+
+/* ========== FOOTER ========== */ 
+/* Footer Layout & Alignment (Source: CSS-Tricks - A Guide to Flexbox)  
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 40px;
+}
+
+/* Left Side Styling */
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+/* Appreciation Message - Bigger, Philosopher Font */
+.footer-message {
+    font-size: 22px; /* Bigger */
+    font-weight: bold;
+    font-family: 'Philosopher', sans-serif; /* Ensures it's in Philosopher */
+    margin-bottom: 5px;
+}
+
+/* Copyright - Smaller, Inter Font */
+.copyright {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif; /* Keeps Inter for contrast */
+    margin: 0;
+}
+
+/* Right Side - Footer Navigation */
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* Ensures links move to a new line if needed */
+    gap: 15px; /* Adjust spacing */
+    justify-content: flex-end; /* Aligns right, change if needed */
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color: #2c134d;
+    font-weight: bold;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+/* Responsive Design - Media Queries (Source: Mozilla MDN - CSS Media Queries)  
+https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries  */
+
+/* Mobile Optimization - Media Queries (Source: W3Schools - CSS Media Queries)  
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp  */
+
+/*  
+Stacking Elements for Mobile (Source: CSS-Tricks - A Complete Guide to CSS Media Queries)  
+https://css-tricks.com/a-complete-guide-to-css-media-queries/  */
+
+@media (max-width: 768px) {
+    /* Header spacing */
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column; /* Stack items */
+        align-items: center; /* Center everything */
+        text-align: center;
+    }
+
+    .footer-left {
+        text-align: center; /* Center the appreciation message */
+        margin-bottom: 15px;
+    }
+
+    .footer-nav ul {
+        justify-content: center; /* Center links */
+        flex-wrap: wrap; /* Allows links to wrap */
+        gap: 10px;
+    }
+}
+    /* Hero should remain left-aligned */
+    .hero {
+        text-align: left;
+        padding: 0 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+        max-width: 1000px;
+    }
+
+    .hero p {
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+
+    /* Project layout adjusts */
+    .project {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Footer aligns correctly */
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        padding: 20px;
+    }
+
+
+/* ========== ABOUT PAGE STYLES ========== */
+/* Layout & Spacing (Source: Mozilla MDN - CSS Box Alignment)  
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Alignment */
+
+/* About Page Layout */
+.about-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 40px 40px 60px; /* Increased top padding */
+    }
+
+/* About Title */
+.about-container h1 {
+    font-size: 43px;
+    max-width: 1000px; /* Matches divider width */
+    margin-top: 16px; /* New - Adds extra space above the h1 */
+    margin-bottom: 40px; /* Adds spacing between H1 and content */
+}
+
+/* Content Wrapper (Text on Left, Image on Right) */
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px; /* Ensures 40px spacing between image and text */
+    flex-direction: row-reverse; /* Moves image to the right */
+}
+
+/* Profile Image */
+.about-image-container {
+    flex-shrink: 0;
+}
+
+.about-image {
+    width: 294px;
+    height: 294px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* About Text */
+.about-text {
+    flex: 1;
+    text-align: left;
+}
+
+/* About Paragraphs */
+.about-text p {
+    font-size: 16px;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+/* "Get in Touch" Button */
+.about-text .button {
+    margin-top: 30px;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+@media (max-width: 768px) {
+    .about-container {
+        padding-top: 20px;
+    }
+
+    .about-container h1 {
+        font-size: 36px;
+        max-width: 90%; /* Keeps width proportional */
+        margin-bottom: 40px; /* Keeps spacing consistent */
+    }
+
+    .about-content {
+        flex-direction: column; /* Stack image and text */
+        align-items: flex-start; /* Keep text left-aligned */
+        gap: 40px; /* Ensures spacing between stacked elements */
+    }
+
+    .about-image-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .about-text {
+        text-align: left; /* Ensures text remains left-aligned */
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .about-text p {
+        font-size: 14px;
+        max-width: 90%;
+    }
+
+    body {
+        padding: 20px; /* Reduce padding for tablets */
+    }
+    
+    .hero {
+        padding: 0 20px; /* Reduce side padding */
+    }
+
+    .case-study-content,
+    .about-container,
+    .projects-list {
+        padding: 20px; 
+    }
+}
+
+/* Optimized Image Scaling for Mobile (Sources: MDN - Object-Fit & Responsive Images, W3Schools)  
+   https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit  
+   https://www.w3schools.com/css/css_rwd_images.asp */
+
+@media (max-width: 480px) {
+    .about-image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .about-container h1 {
+        font-size: 30px;
+    }
+
+    /* Merged from duplicate @media (max-width: 480px) */
+    body {
+        padding: 15px; /* Even smaller for mobile */
+    }
+
+    .hero {
+        padding: 0 15px; /* Align content better */
+    }
+
+    .case-study-content,
+    .about-container,
+    .projects-list {
+        padding: 15px;
+    }
+}
+
+/* Remove default link styles from the logo and navigation */
+.logo a {
+    text-decoration: none; /* Removes underline */
+    color: #2c134d; /* Ensures the correct color */
+    font-weight: 700; /* Ensures consistency */
+}
+
+.logo a:hover {
+    color: #2c134d; /* Prevents hover color change */
+}
+
+/* ========== CASE STUDY STYLES ========== */
+
+/* Case Study Container */
+.case-study-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+/* OhME! Case Study Title Section */
+.case-study-header {
+    max-width: 1000px;
+    margin: 60px auto 30px; /* Adjusted space */
+    text-align: center;
+    padding-top: 40px;
+}
+
+.case-study-header h1 {
+    font-size: 43px;
+    margin-bottom: 20px; /* Adjusted spacing */
+}
+
+.case-study-subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 30px; /* Adjusted spacing */
+}
+
+/* Main Case Study Image */
+.case-study-main-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px; /* Adjusted spacing */
+}
+
+.main-case-image {
+    width: 100%; /* Make image responsive */
+    max-width: 686px; /* Prevent it from getting too large */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 38px;
+    object-fit: cover;
+}
+
+/* ========== INFO SECTION BELOW OVERVIEW ========== */
+.case-study-info {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin-top: 10px; /* Bring table closer to text */
+    margin-bottom: 40px; /* Keep balance before next section */
+    padding: 0 40px;
+    gap: 30px; /* Adjust column gap */
+}
+
+/* Info Columns */
+.info-column {
+    flex: 1;
+    text-align: left;
+}
+
+/* Underlined Headings */
+.info-column h3 {
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+/* Body Text */
+.info-column p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* ========== GENERAL SECTION STYLING ========== */
+.case-study-section {
+    max-width: 900px;
+    padding-top: 10px; /* Reduced spacing */
+    margin: 0 auto 80px; /* Reduce space between sections */
+}
+
+.case-study-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.case-study-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* ========== FIXED GROWTH SECTION (Text & Image Alignment) ========== */
+.growth-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px; /* Controls space between text and image */
+    margin-bottom: 60px; /* Adjust spacing from next section */
+}
+
+.growth-section .case-study-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.growth-section .case-study-text h2 {
+    margin-bottom: 15px; /* Reduce space below heading */
+}
+
+.growth-section .case-study-text p {
+    margin-bottom: 12px; /* Improve paragraph spacing */
+}
+
+.growth-section .growth-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.growth-section .growth-image img {
+    width: 100%; /* Make image fully responsive */
+    max-width: 800px; /* Prevent it from getting too large */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20px; /* Matches design */
+}
+
+/* ========== BACK TO TOP BUTTON ========== */
+/* 
+Back to Top Button Styling 
+(Source: W3Schools - How To Create a Scroll-to-Top Button)
+https://www.w3schools.com/howto/howto_js_scroll_to_top.asp 
+*/
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #5C3D73; /* Match your design color */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#backToTop:hover {
+    background-color: #472C5D; /* Slightly darker shade */
+}
+
+#backToTop.show {
+    opacity: 1;
+}
+
+/* ========== FIXED HACKATHON SECTION (Text & Image Alignment) ========== */
+.hackathon-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 60px; /* Adjusted for better spacing */
+}
+
+.hackathon-section .case-study-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hackathon-section .case-study-text h2 {
+    margin-bottom: 15px;
+}
+
+.hackathon-section .case-study-text p {
+    margin-bottom: 12px;
+}
+
+.hackathon-section .hackathon-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hackathon-section .hackathon-image img {
+    width: 100%;
+    max-width: 800px; /* Prevent image from getting too large */
+    height: auto;
+    border-radius: 30px;
+}
+
+/* ========== IMAGE STYLING (INDIVIDUAL SIZES) ========== */
+.growth-image img,
+.hackathon-image img,
+.research-image img,
+.scalable-image img {
+    width: 100%;
+    max-width: 849px; /* Ensure images scale properly */
+    height: auto;
+    border-radius: 38px;
+    object-fit: cover;
+}
+
+/* Layout: Image on Top, Text Below */
+.research-section,
+.scalable-section {
+    text-align: left;
+}
+
+.research-image,
+.scalable-image {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Final Thoughts Section */
+.final-thoughts-section {
+    max-width: 900px;
+    padding-top: 40px;
+    margin: 0 auto 80px;
+}
+
+.final-thoughts-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Responsive Navigation for Smaller Screens (Source: MDN, CSS-Tricks)  
+   https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries  
+   https://css-tricks.com/a-complete-guide-to-css-media-queries/ */
+
+@media (max-width: 768px) {
+    .case-study-content {
+        padding: 20px;
+    }
+
+    .case-study-header {
+        padding: 0 20px;
+    }
+
+    .case-study-section {
+        max-width: 100%;
+        padding: 0 20px;
+        margin-bottom: 60px; /* Adjusted for mobile */
+    }
+
+    /* Stack Text & Image on Smaller Screens */
+    .growth-section,
+    .hackathon-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .growth-section .case-study-text,
+    .hackathon-section .case-study-text {
+        text-align: left;
+        max-width: 100%;
+    }
+
+    .growth-section .growth-image,
+    .hackathon-section .hackathon-image {
+        max-width: 100%;
+    }
+
+    .growth-section .growth-image img,
+    .hackathon-section .hackathon-image img {
+        width: 100%;
+        height: auto;
+    }
+    
+    /* Ensure proper spacing for mobile */
+    .case-study-info {
+        flex-direction: column;
+        gap: 20px;
+        text-align: left;
+        margin-top: 5px; /* Reduce space above table */
+        margin-bottom: 30px; /* Adjust readability */
+    }
+}
+
+
+/* ========== REVERENTBLUE CASE STUDY STYLES ========== */
+
+/* Case Study Container */
+.reverentblue-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+/* Case Study Title Section */
+.reverentblue-header {
+    max-width: 1000px;
+    margin: 60px auto 30px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.reverentblue-header h1 {
+    font-size: 43px;
+    margin-bottom: 20px;
+}
+
+.reverentblue-subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 30px;
+}
+
+/* Main Case Study Image */
+.reverentblue-main-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.reverentblue-main-image img {
+    width: 100%;
+    max-width: 648px;
+    height: auto;
+    border-radius: 38px;
+    object-fit: cover;
+}
+
+/* ========== INFO SECTION BELOW OVERVIEW ========== */
+.reverentblue-info {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    padding: 0 40px;
+    gap: 30px;
+}
+
+.reverentblue-info-column {
+    flex: 1;
+    text-align: left;
+}
+
+.reverentblue-info-column h3 {
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.reverentblue-info-column p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* ========== GENERAL SECTION STYLING ========== */
+.reverentblue-section {
+    max-width: 900px;
+    padding-top: 10px;
+    margin: 0 auto 80px;
+}
+
+.reverentblue-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.reverentblue-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* ========== TWO-COLUMN VISUAL IDENTITY SECTION ========== */
+.reverentblue-visual-identity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.reverentblue-visual-identity .reverentblue-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.reverentblue-visual-identity .reverentblue-text h2 {
+    margin-bottom: 15px;
+}
+
+.reverentblue-visual-identity .reverentblue-text p,
+.reverentblue-visual-identity .reverentblue-text ul {
+    margin-bottom: 12px;
+}
+
+.reverentblue-visual-identity .reverentblue-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.reverentblue-visual-identity .reverentblue-image img {
+    width: 100%;
+    max-width: 498px;
+    height: auto;
+    border-radius: 50px;
+}
+
+/* ========== RESEARCH & USABILITY SECTION ========== */
+.reverentblue-research img {
+    width: 100%;
+    max-width: 1120px;
+    height: auto;
+    border-radius: 38px;
+    object-fit: cover;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* ========== FINAL THOUGHTS SECTION ========== */
+.reverentblue-final-thoughts {
+    max-width: 900px;
+    padding-top: 40px;
+    margin: 0 auto 80px;
+}
+
+.reverentblue-final-thoughts h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 768px) {
+    .reverentblue-content {
+        padding: 20px;
+    }
+
+    .reverentblue-header {
+        padding: 0 20px;
+    }
+
+    .reverentblue-section {
+        max-width: 100%;
+        padding: 0 20px;
+        margin-bottom: 60px;
+    }
+
+    /* Stack Text & Image on Smaller Screens */
+    .reverentblue-visual-identity {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .reverentblue-visual-identity .reverentblue-text {
+        text-align: left;
+        max-width: 100%;
+    }
+
+    .reverentblue-visual-identity .reverentblue-image {
+        max-width: 100%;
+    }
+
+    .reverentblue-visual-identity .reverentblue-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Ensure proper spacing for mobile */
+    .reverentblue-info {
+        flex-direction: column;
+        gap: 20px;
+        text-align: left;
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #5C3D73;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#backToTop:hover {
+    background-color: #472C5D;
+}
+
+#backToTop.show {
+    opacity: 1;
+}
+
+/* ========== Project Page Styles ========== */
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    padding-bottom: 0px;
+    margin-top: 60px;
+}
+
+.project {
+    margin-bottom: 40px; /* Ensures extra space */
+}
+
+.no-top-divider {
+    display: none;
+}
+
+/* Citation Page */
+
+.citations-container {
+    max-width: 1000px; /* Matches the header's max width */
+    margin: 0 auto; /* Centers content */
+    padding: 0 40px; /* Matches header's left and right padding */
+}
+
+.citations-hero-content {
+    max-width: 1000px; /* Matches the header width */
+    margin: 0 auto; /* Centers content */
+    padding: 0 40px; /* Matches header's left and right padding */
+    text-align: left; /* Aligns title and subtitle to the left */
+}
+
+/* Ensure spacing below title */
+.citations-title {
+    margin-top: 80px; /* Moves title down for better spacing */
+    margin-bottom: 15px;
+}
+
+/* Ensure there is spacing between each section */
+.citations-heading {
+    margin-top: 50px; /* Increased space for better separation */
+    margin-bottom: 25px;
+}
+
+/* Add spacing between each reference item */
+.citation-item {
+    margin-bottom: 35px; /* Slightly increased space between citations */
+}
+
+/* Add spacing between paragraphs */
+.citation-item p {
+    margin-bottom: 12px;
+}

@@ -1,132 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- This area is for instructions for the browser and not the user -->
- <meta charset="utf-8">
- <title>Kayla Danio's Portfolio</title>
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Linking External CSS File (Taught by Paul Brokenshire IXD 108) -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Importing Google Fonts (External Source: Google Fonts) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+    
+    <title>Kayla Danio – Portfolio</title>
 </head>
 <body>
+
+    <!-- Header Section: Contains Logo & Navigation (Taught by Paul Brokenshire IXD 108) -->
     <header>
-        <a class="logo" href="index.html"><h2>Kayla's Web Coding Journey</h2></a>
-        <nav>
-            <a href="#">Projects</a>
-            <a href="#">Practice</a>
-            <a href="#">Portfolio</a>
-        </nav>
+        <div class="logo">kayla danio</div>
         
+        <!-- Navigation Bar (Taught by Paul Brokenshire IXD 108: Using <ul> for nav structure) -->
+        <nav>
+            <ul>
+                <li><a href="projects.html">projects</a></li>
+                <li><a href="aboutpage.html">about</a></li>
+                <li><a href="mailto:kayladanio.digital@gmail.com">contact</a></li> <!-- "mailto:" was covered in class -->
+            </ul>
+        </nav>
     </header>
 
-    <section class="hero-area">
-        <div class="hero-content">
-        <!-- <img src="img/placeholder-1920.png" alt="a large placeholder image that fills the page" width="1920" height="370"> -->
-        </div>
-        <div class="hero-text">
-        <h1> 👩🏻‍💻 Hi! I’m Kayla—an interaction designer-in-training who believes every project deserves its own distinct and intuitive visual language.</h1>
-        </div>
-        </section>
+    <!-- Hero Section: Introduction (Taught by Paul Brokenshire: Using <section> for content grouping) -->
+    <section class="hero">
+        <h1>👩🏻‍💻 Hi! I'm Kayla—an interaction designer-in-training who believes every project deserves its own distinct and intuitive visual language.</h1>
+        
+        <!-- Paragraph Formatting (Basic HTML Concept from Class) -->
+        <p>I bring a bubbly 🫧✨ curious energy to design—balanced by a perfectionist inner voice that keeps every detail just right. 😊</p>
+        
+        <!-- Call-to-Action Button (Source: Mozilla MDN - Styling Buttons with CSS) -->
+        <!-- URL: https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links#styling_buttons -->
+        <a href="aboutpage.html" class="button">Read more →</a>
     </section>
 
-        <main>
-            <div class="case-study-column">
-                <section class="project-list" id="my_projects">
-                    <h3>My Projects</h3>
-                    <section class="project-card">
-                    <a href="#">
-                    <img src="img/placeholder-130.png" alt="Its just a placeholder image." width="130" height="130">
-                    <h4>Web Portfolio</h4>
-                    </a>
-                    <p class="heading-caption">4 Week Project</p>
-                    <p> I’ve designed and coded an initial portfolio that showcases what I’ve learned so far in the IxD diploma and why I’d be great to hire for an internship over the summer.</p>
-                 </section>
-                
-                <section class="project-card">
-                    <a href="#">
-                    <img src="img/placeholder-130.png" alt="Its just a placeholder image." width="130" height="130">
-                    <h4>Mountain Rescue Site</h4>
-                    </a>
-                    <p class="heading-caption">6 Week Project</p>
-                    <p> I designed and coded a website for a mountain rescue team along with my awesome Kateryna. Check it out!</p>
-                </section> <!--end of .project-card-->
-            </section> <!--end of .project-list-->
+    <!-- Visual Divider: Creates Separation Between Sections (Source: Mozilla MDN - Borders as Dividers) -->
+    <!-- URL: https://developer.mozilla.org/en-US/docs/Web/CSS/border-style -->
+    <div class="divider"></div>
 
-            <section class="project-list" id="practice">
-                <h3>Practice and Learning</h3>
+    <!-- Recent Projects Section (Taught by Paul Brokenshire: Organizing content with <section>) -->
+    <section class="recent-projects">
+        <h2>Recent Projects</h2>
 
-                <section class="project-card">
-                    <a href="html-advice.html">
-                    <img src="img/placeholder-130.png" alt="Its just a placeholder image." width="130" height="130">
-                    <h4>Semantic HTML</h4> 
-                    </a>
-                    <p class="heading-caption">Date of Last Update</p>
-                    <p>A collection of rules and advice for writing proper, valid HTML 5</p>
-                </section>
-                
-                    <section class="project-card">
-                    <a href="#">
-                    <img src="img/placeholder-130.png" alt="Its just a placeholder image." width="130" height="130">
-                    <h4>CSS for Style and Type</h4> 
-                    </a>
-                    <p class="heading-caption">Date of Last Update</p>
-                    <p>Setting up the style guide of colour, typography and other visual design rules for the sites I’ve designed and built this term.</p>
-                    </section>
+        <div class="project-container"> <!-- Learned in Class: Using <div> for layout structure -->
+
+            <!-- First Project: OHME! Homepage Redesign -->
+            <article class="project">  <!-- Taught by Paul Brokenshire: Using <article> for self-contained content -->
+                <div class="project-info">
+                    <h3>OHME! Homepage Redesign</h3>
+                    <div class="project-subtitle">UX/UI Redesign • 3 Day Hackathon</div>
+                    <p>OHME! is a fast-growing freeze-dried fruit brand with a playful identity. This redesign focused on enhancing navigation, improving accessibility, and creating a seamless shopping experience while keeping its fun, vibrant energy intact.</p>
                     
-                    <section class="project-card">
-                        <a href="#">
-                        <img src="img/placeholder-130.png" alt="Its just a placeholder image." width="130" height="130">
-                        <h4>I can use Flexbox!!!</h4>
-                        </a>
-                        <p class="heading-caption">Date of Last Update</p>
-                        <p>This whole CSS layout thing nearly breaks my brain but I did some practice and I’ve made it work! Check out my grids!</p>
-                    </section>
-                        
-                    <section class="project-card">
-                        <a href="#">
-                        <img src="img/placeholder-130.png" alt="Its just a placeholder image." width="130" height="130">
-                        <h4>Grid is Even Better!!</h4>
-                        </a>
-                        <p class="heading-caption">Date of Last Update</p>
-                        <p>Wow, and I thought Flexbox was neat! This makes it even easier to control the layout of the websites I’m making.</p>
-                    </section> <!--end of .practice-list -->
-                </section>
-            </div>
+                    <!-- Read More Button (External Source: Mozilla MDN - Button Best Practices) -->
+                    <a href="casestudyone.html" class="button">Read more →</a>
+                </div>
 
-            <aside>
-                <section class="project-list" id="tutorials">
-                    <h3>Tutorials I’ve Used</h3>
-                    <a href="#">
-                    <img src="img/placeholder-130.png" alt="Its just a placeholder image." width="130" height="130">
-                    <p><strong>Resource Name</strong></p>
-                    </a>
-                     <p class="heading-caption">Author</p>
-                </section>
+                <!-- Project Image (External Source: W3Schools - Image Handling) -->
+                <div class="project-image">
+                    <img src="img/ohme1-sample.jpg" alt="OHME! Homepage Redesign">
+                </div>
+            </article>
 
+            <!-- Second Project: Reverentblue Homepage Design -->
+            <article class="project">
+                <div class="project-info">
+                    <h3>Reverentblue Homepage Design</h3>
+                    <div class="project-subtitle">UX/UI Design • School Project</div>
+                    <p>Reverent Blue is a fictional ocean conservation brand I designed from scratch. This homepage blends bold visuals, clear structure, and mission-driven messaging to create an engaging and action-focused experience.</p>
                     
-            </aside>
+                    <a href="casestudytwo.html" class="button">Read more →</a>
+                </div>
 
-        </main>
+                <div class="project-image">
+                    <img src="img/rb1-sample.jpg" alt="Reverentblue Homepage Design">
+                </div>
+            </article>
 
-        <footer>
-            <a class="logo" href="index.html"><h2>Kayla's Web Coding Journey</h2></a>
-            <nav>
-                <a href="#">Contact</a>
-                <a href="#">Citations</a>
-                <a href="#">Portfolio</a>
-            </nav>
-            <hr>
-            <p> All code used in the creation of this website has been written by me, with the aid of in class tutorials and many, many online resources. Full details of resources used and image sources can be found in the citation page. 
-            </p>
+        </div>
 
-    
-             <!-- W3C Validation Badge -->
-    <p>
-        <a href="http://jigsaw.w3.org/css-validator/check/referer">
-            <img style="border:0;width:88px;height:31px" 
-                 src="http://jigsaw.w3.org/css-validator/images/vcss" 
-                 alt="Valid CSS!" />
-        </a>
-    </p>
-        </footer>
+        <!-- View All Projects Link (Basic HTML Concept) -->
+        <a href="projects.html" class="view-all">View all projects →</a>
+    </section>
+
+    <!-- Divider Before Footer (Same Concept as Above) -->
+    <div class="divider"></div>
+
+    <!-- Footer Section (Taught by Paul Brokenshire: Structuring Footer Content) -->
+    <footer>
+        <div class="footer-left">
+            <p class="footer-message">Appreciate you stopping by! Let’s Connect.</p>
+            <p class="copyright">© 2025 Kayla Danio</p>
+        </div>
+
+        <!-- Footer Navigation Links --> 
+         <!-- Email Link using "mailto:" (Source: Mozilla MDN - HTML Links) -->
+        <!-- URL: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#email_links -->
+         
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="citations.html">citations</a></li>
+                <li><a href="mailto:kayladanio.digital@gmail.com">kayladanio.digital@gmail.com</a></li>
+                <li><a href="https://linkedin.com/in/kayladanio" target="_blank">linkedin</a></li> 
+            </ul>
+        </nav>
+    </footer>
+
 </body>
 </html>
