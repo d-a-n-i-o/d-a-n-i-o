@@ -57,47 +57,28 @@ nav ul {
 /* Navigation Links */ /* Navigation Styling (Source: Mozilla MDN - CSS Navigation Links)  
 https://developer.mozilla.org/en-US/docs/Web/CSS/:hover  
 /*  
-Button Styling (Source: Mozilla MDN - Styling Buttons with CSS)  
-https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Buttons  
-*/
-
 /* Default Navigation Links - No Underline */
-nav ul li a {
-    text-decoration: none;  
-    color: #2c134d;  
+/* Navigation Styling (Source: Mozilla MDN - CSS Navigation Links)  
+   https://developer.mozilla.org/en-US/docs/Web/CSS/:hover */
+   nav ul li a {
+    text-decoration: none;
+    color: #2c134d;
     font-weight: bold;
 }
 
-/* Ensure visited links remain the same color */
-nav ul li a:visited {
-    color: #2c134d;  
-    text-decoration: none;  
-}
-
-/* Adds underline on hover */
-nav ul li a:hover {
-    text-decoration: underline;  
-}
-
+/* Adds underline on hover and when active */
+nav ul li a:hover, 
 nav ul li a.active {
-    text-decoration: underline;  
-    font-weight: bold;
-    color: #2c134d;
-}
-
-nav ul li a.active:visited {
-    color: #2c134d;
     text-decoration: underline;
 }
 
-/* Ensures all links do not inherit unwanted browser styling */
+/* Ensure visited links remain the same color */
 /* (Source: Mozilla MDN - CSS Links) */
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/:link */
-
-a {
-    text-decoration: none !important;
-    color: inherit;
+nav ul li a:visited {
+    color: #2c134d;  
 }
+
 /* ========== HERO SECTION ========== */
 .hero {
     max-width: 1000px;
@@ -119,7 +100,7 @@ a {
     max-width: 600px; /* Keeps text compact */
 }
 
-/* ========== BUTTON ========== */
+/* ========== BUTTON  styling source: https://www.w3schools.com/css/css3_buttons.asp ==========  */  
 .button {
     display: inline-block;
     padding: 10px 15px;
@@ -340,7 +321,7 @@ https://css-tricks.com/a-complete-guide-to-css-media-queries/  */
 
     /* Footer aligns correctly */
     footer {
-        flex-direction: column;
+    /*  flex-direction: column;*/
         align-items: center;
         text-align: center;
         gap: 30px;
