@@ -11,7 +11,7 @@ body, h1, h2, h3, p, ul, li, a {
     box-sizing: border-box;
 }
 
-/*Typography (Taught by Paul Brokenshire - CSS Typography Basics) */
+/*Typography (Taught by Paul Brokenshire} */
 h1, h2, h3, .logo {
     font-family: 'Philosopher', sans-serif;
     font-weight: 700;
@@ -22,14 +22,14 @@ body, p {
     font-weight: 400;
 }
 
-/* Body Styling (Taught by Paul Brokenshire - CSS Styling Basics) */
+/* Body Styling (Taught by Paul Brokenshire) */
 body {
     background-color: #f3efff; /* Soft lavender */
     color: #2c134d; /* Deep purple */
     padding: 40px;
 }
 
-/*   Header, Projects and Footer used Flexbox Layout (Source: CSS-Tricks - A Guide to Flexbox)  
+/* Header, Projects and Footer used Flexbox Layout (Source: CSS-Tricks - A Guide to Flexbox)  
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/  */
 
 header {
@@ -44,7 +44,7 @@ header {
 .logo {
     font-size: 18px;
     font-weight: bold;
-    margin-right: 30px; /* Adds space between logo and nav */
+    margin-right: 30px; /* between logo and nav */
 }
 
 nav ul {
@@ -57,8 +57,8 @@ nav ul {
 /* Navigation Links */ /* Navigation Styling (Source: Mozilla MDN - CSS Navigation Links)  
 https://developer.mozilla.org/en-US/docs/Web/CSS/:hover  
 /*  
-/* Default Navigation Links - No Underline */
-/* Navigation Styling (Source: Mozilla MDN - CSS Navigation Links)  
+/* Default Navigation Links with no underline */
+/* Navigation styling (Source: Mozilla MDN - CSS Navigation Links)  
    https://developer.mozilla.org/en-US/docs/Web/CSS/:hover */
    nav ul li a {
     text-decoration: none;
@@ -72,7 +72,7 @@ nav ul li a.active {
     text-decoration: underline;
 }
 
-/* Ensure visited links remain the same color */
+/* links in purple and not browser blue */
 /* (Source: Mozilla MDN - CSS Links) */
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/:link */
 nav ul li a:visited {
@@ -90,14 +90,14 @@ nav ul li a:visited {
 .hero h1 {
     font-size: 43px;
     font-weight: 700;
-    max-width: 1000px; /* Matches divider width */
-    margin-bottom: 40px; /* Increased spacing */
+    max-width: 1000px; 
+    margin-bottom: 40px; 
 }
 
 .hero p {
     font-size: 16px;
     margin-bottom: 20px;
-    max-width: 600px; /* Keeps text compact */
+    max-width: 600px; 
 }
 
 /* ========== BUTTON  styling source: https://www.w3schools.com/css/css3_buttons.asp ==========  */  
@@ -122,18 +122,18 @@ nav ul li a:visited {
 /* ========== DIVIDER ========== */
 .divider {
     border-bottom: 1px solid #2c134d;
-    max-width: calc(1100px - 80px); /* Matches header width */
-    width: 100%; /* Keeps it responsive */
+    max-width: calc(1100px - 80px); 
+    width: 100%; 
     margin: 40px auto;
-    padding: 0 40px; /* Aligns with the nav/header */
-    box-sizing: border-box; /* Prevents unwanted width expansion */
+    padding: 0 40px; 
+    box-sizing: border-box; 
 }
 
-/* ========== RECENT PROJECTS ========== */
+/* ========== RECENT PROJECTS SECTION  ========== */
 /* Project Layout (Source: CSS-Tricks - A Guide to Flexbox)  
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 
-/* Mobile-Friendly Layout Adjustments (Sources: MDN - CSS Flexbox & Grid, A List Apart)  
+/* Mobile-Friendly layout adjustments (Sources: MDN - CSS Flexbox & Grid, A List Apart)  
    https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout  
    https://developer.mozilla.org/en-US/docs/Web/CSS/grid  
    https://alistapart.com/article/responsive-web-design/ */
@@ -222,18 +222,18 @@ footer {
     text-align: left;
 }
 
-/* Appreciation Message - Bigger, Philosopher Font */
+/* Appreciation Message */
 .footer-message {
-    font-size: 22px; /* Bigger */
+    font-size: 22px; 
     font-weight: bold;
-    font-family: 'Philosopher', sans-serif; /* Ensures it's in Philosopher */
+    font-family: 'Philosopher', sans-serif; 
     margin-bottom: 5px;
 }
 
-/* Copyright - Smaller, Inter Font */
+/* Copyright Text */
 .copyright {
     font-size: 14px;
-    font-family: 'Inter', sans-serif; /* Keeps Inter for contrast */
+    font-family: 'Inter', sans-serif; 
     margin: 0;
 }
 
@@ -241,9 +241,9 @@ footer {
 .footer-nav ul {
     list-style: none;
     display: flex;
-    flex-wrap: wrap; /* Ensures links move to a new line if needed */
-    gap: 15px; /* Adjust spacing */
-    justify-content: flex-end; /* Aligns right, change if needed */
+    flex-wrap: wrap; /* I Put this so the copright went to the new line */
+    gap: 15px; 
+    justify-content: flex-end; /* align right */
 }
 
 .footer-nav ul li a {
@@ -252,7 +252,7 @@ footer {
     font-weight: bold;
 }
 
-/* ========== RESPONSIVE DESIGN ========== */
+/* ========== RESPONSIVE DESIGN FOR FOUNDATION OF THE PAGE LIKE HEADER FOOTER ========== */
 /* Responsive Design - Media Queries (Source: Mozilla MDN - CSS Media Queries)  
 https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries  */
 
@@ -275,35 +275,35 @@ https://css-tricks.com/a-complete-guide-to-css-media-queries/  */
 
 @media (max-width: 768px) {
     footer {
-        flex-direction: column; /* Stack items */
-        align-items: center; /* Center everything */
+        flex-direction: column; /* stack items when responding */
+        align-items: center; /* center items when responding */
         text-align: center;
     }
 
     .footer-left {
-        text-align: center; /* Center the appreciation message */
+        text-align: center; /* center left footer items when  */
         margin-bottom: 15px;
     }
 
     .footer-nav ul {
         justify-content: center; /* Center links */
-        flex-wrap: wrap; /* Allows links to wrap */
+        flex-wrap: wrap; /* for tha links to wrap */
         gap: 10px;
     }
 }
-    /* Hero should remain left-aligned */
+    /* Hero to stay to left when responding */
     .hero {
         text-align: left;
         padding: 0 20px;
     }
 
     .hero h1 {
-        font-size: 36px;
+        font-size: 36px;  /* hero px on tablet */
         max-width: 1000px;
     }
 
     .hero p {
-        font-size: 14px;
+        font-size: 14px; /* hero px on mobile */
         max-width: 100%;
     }
 
@@ -319,9 +319,9 @@ https://css-tricks.com/a-complete-guide-to-css-media-queries/  */
         height: auto;
     }
 
-    /* Footer aligns correctly */
+    /* Footer Both left and right part of footer */
+    /*  I removed this because it made it look funny? flex-direction: column;*/
     footer {
-    /*  flex-direction: column;*/
         align-items: center;
         text-align: center;
         gap: 30px;
@@ -340,44 +340,44 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Alignment */
         display: flex;
         flex-direction: column;
         gap: 40px;
-        padding: 40px 40px 60px; /* Increased top padding */
+        padding: 40px 40px 60px; /* increased top padding because its to close to  */
     }
 
 /* About Title */
 .about-container h1 {
     font-size: 43px;
-    max-width: 1000px; /* Matches divider width */
-    margin-top: 16px; /* New - Adds extra space above the h1 */
-    margin-bottom: 40px; /* Adds spacing between H1 and content */
+    max-width: 1000px; /* what the divider width is */
+    margin-top: 16px; /* more space for h1 at top*/
+    margin-bottom: 40px; /* space between h1 and subtitle*/
 }
 
-/* Content Wrapper (Text on Left, Image on Right) */
+/* Content wrapper (text on left image on right) */
 .about-content {
     display: flex;
     align-items: flex-start;
-    gap: 40px; /* Ensures 40px spacing between image and text */
-    flex-direction: row-reverse; /* Moves image to the right */
+    gap: 40px; /* between text and image */
+    flex-direction: row-reverse; /* makes the image right */
 }
 
 /* Profile Image */
 .about-image-container {
-    flex-shrink: 0;
+    flex-shrink: 0; /* so profile image doesnt shrink when the container gets smaller, profile pic will stay the same size and so under */
 }
 
 .about-image {
     width: 294px;
     height: 294px;
     border-radius: 20px;
-    object-fit: cover;
+    object-fit: cover;  /* to not distort the image */
 }
 
-/* About Text */
+/* About text */
 .about-text {
     flex: 1;
     text-align: left;
 }
 
-/* About Paragraphs */
+/* About paragraphs */
 .about-text p {
     font-size: 16px;
     max-width: 500px;
@@ -389,7 +389,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Alignment */
     margin-top: 30px;
 }
 
-/* ========== RESPONSIVE DESIGN ========== */
+/* ========== RESPONSIVE DESIGN FOR ABOUT PAGE ========== */
 
 @media (max-width: 768px) {
     .about-container {
@@ -398,14 +398,14 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Alignment */
 
     .about-container h1 {
         font-size: 36px;
-        max-width: 90%; /* Keeps width proportional */
-        margin-bottom: 40px; /* Keeps spacing consistent */
+        max-width: 90%; 
+        margin-bottom: 40px; 
     }
 
     .about-content {
-        flex-direction: column; /* Stack image and text */
-        align-items: flex-start; /* Keep text left-aligned */
-        gap: 40px; /* Ensures spacing between stacked elements */
+        flex-direction: column; 
+        align-items: flex-start; 
+        gap: 40px; 
     }
 
     .about-image-container {
@@ -415,7 +415,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Alignment */
     }
 
     .about-text {
-        text-align: left; /* Ensures text remains left-aligned */
+        text-align: left; 
         padding: 0;
         max-width: 100%;
     }
@@ -426,11 +426,11 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Alignment */
     }
 
     body {
-        padding: 20px; /* Reduce padding for tablets */
+        padding: 20px; /* reduce padding on tablets */
     }
     
     .hero {
-        padding: 0 20px; /* Reduce side padding */
+        padding: 0 20px; /* reduce padding */
     }
 
     .case-study-content,
@@ -456,11 +456,11 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Alignment */
 
     /* Merged from duplicate @media (max-width: 480px) */
     body {
-        padding: 15px; /* Even smaller for mobile */
+        padding: 15px; /* smaller for mobile to much margin before*/
     }
 
     .hero {
-        padding: 0 15px; /* Align content better */
+        padding: 0 15px; /* better alignment */
     }
 
     .case-study-content,
@@ -472,13 +472,13 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Alignment */
 
 /* Remove default link styles from the logo and navigation */
 .logo a {
-    text-decoration: none; /* Removes underline */
-    color: #2c134d; /* Ensures the correct color */
-    font-weight: 700; /* Ensures consistency */
+    text-decoration: none; 
+    color: #2c134d; 
+    font-weight: 700; 
 }
 
 .logo a:hover {
-    color: #2c134d; /* Prevents hover color change */
+    color: #2c134d; 
 }
 
 /* ========== CASE STUDY STYLES ========== */
@@ -493,34 +493,34 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Alignment */
 /* OhME! Case Study Title Section */
 .case-study-header {
     max-width: 1000px;
-    margin: 60px auto 30px; /* Adjusted space */
+    margin: 60px auto 30px; 
     text-align: center;
     padding-top: 40px;
 }
 
 .case-study-header h1 {
     font-size: 43px;
-    margin-bottom: 20px; /* Adjusted spacing */
+    margin-bottom: 20px; 
 }
 
 .case-study-subtitle {
     font-size: 18px;
     font-weight: 600;
     display: block;
-    margin-bottom: 30px; /* Adjusted spacing */
+    margin-bottom: 30px; 
 }
 
 /* Main Case Study Image */
 .case-study-main-image {
     display: flex;
     justify-content: center;
-    margin-bottom: 40px; /* Adjusted spacing */
+    margin-bottom: 40px; 
 }
 
 .main-case-image {
-    width: 100%; /* Make image responsive */
-    max-width: 686px; /* Prevent it from getting too large */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; /* makes image responsive */
+    max-width: 686px; /* prevent it from getting too large */
+    height: auto; /*  makes aspect ratio auto */
     border-radius: 38px;
     object-fit: cover;
 }
@@ -530,10 +530,10 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Alignment */
     display: flex;
     justify-content: space-between;
     max-width: 1000px;
-    margin-top: 10px; /* Bring table closer to text */
-    margin-bottom: 40px; /* Keep balance before next section */
+    margin-top: 10px; 
+    margin-bottom: 40px; 
     padding: 0 40px;
-    gap: 30px; /* Adjust column gap */
+    gap: 30px; 
 }
 
 /* Info Columns */
@@ -560,8 +560,8 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Alignment */
 /* ========== GENERAL SECTION STYLING ========== */
 .case-study-section {
     max-width: 900px;
-    padding-top: 10px; /* Reduced spacing */
-    margin: 0 auto 80px; /* Reduce space between sections */
+    padding-top: 10px; 
+    margin: 0 auto 80px; 
 }
 
 .case-study-section h2 {
@@ -575,13 +575,13 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Alignment */
     margin-bottom: 10px;
 }
 
-/* ========== FIXED GROWTH SECTION (Text & Image Alignment) ========== */
+/* ========== GROWTH SECTION  ========== */
 .growth-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px; /* Controls space between text and image */
-    margin-bottom: 60px; /* Adjust spacing from next section */
+    gap: 40px; /* controls space between text and image */
+    margin-bottom: 60px; /* creates margin with other sections */
 }
 
 .growth-section .case-study-text {
@@ -590,11 +590,11 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Alignment */
 }
 
 .growth-section .case-study-text h2 {
-    margin-bottom: 15px; /* Reduce space below heading */
+    margin-bottom: 15px; 
 }
 
 .growth-section .case-study-text p {
-    margin-bottom: 12px; /* Improve paragraph spacing */
+    margin-bottom: 12px; 
 }
 
 .growth-section .growth-image {
@@ -603,10 +603,10 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Alignment */
 }
 
 .growth-section .growth-image img {
-    width: 100%; /* Make image fully responsive */
-    max-width: 800px; /* Prevent it from getting too large */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 20px; /* Matches design */
+    width: 100%; 
+    max-width: 800px; 
+    height: auto; 
+    border-radius: 20px; 
 }
 
 /* ========== BACK TO TOP BUTTON ========== */
@@ -620,7 +620,7 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #5C3D73; /* Match your design color */
+    background-color: #5C3D73; 
     color: white;
     border: none;
     border-radius: 50px;
@@ -639,13 +639,13 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
     opacity: 1;
 }
 
-/* ========== FIXED HACKATHON SECTION (Text & Image Alignment) ========== */
+/* ========== HACKATHON SECTION (Text & Image Alignment) ========== */
 .hackathon-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-    margin-bottom: 60px; /* Adjusted for better spacing */
+    margin-bottom: 60px; 
 }
 
 .hackathon-section .case-study-text {
@@ -668,18 +668,18 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 
 .hackathon-section .hackathon-image img {
     width: 100%;
-    max-width: 800px; /* Prevent image from getting too large */
+    max-width: 800px; /*so it doesnt get to big */
     height: auto;
     border-radius: 30px;
 }
 
-/* ========== IMAGE STYLING (INDIVIDUAL SIZES) ========== */
+/* ========== IMAGE STYLING (for individual photo) ========== */
 .growth-image img,
 .hackathon-image img,
 .research-image img,
 .scalable-image img {
     width: 100%;
-    max-width: 849px; /* Ensure images scale properly */
+    max-width: 849px; 
     height: auto;
     border-radius: 38px;
     object-fit: cover;
@@ -725,10 +725,10 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
     .case-study-section {
         max-width: 100%;
         padding: 0 20px;
-        margin-bottom: 60px; /* Adjusted for mobile */
+        margin-bottom: 60px; /* for for mobile */
     }
 
-    /* Stack Text & Image on Smaller Screens */
+    /* stack text & image on Smaller Screens */
     .growth-section,
     .hackathon-section {
         flex-direction: column;
@@ -753,13 +753,13 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
         height: auto;
     }
     
-    /* Ensure proper spacing for mobile */
+    /* Spacing between sections for mobile */
     .case-study-info {
         flex-direction: column;
         gap: 20px;
         text-align: left;
-        margin-top: 5px; /* Reduce space above table */
-        margin-bottom: 30px; /* Adjust readability */
+        margin-top: 5px; 
+        margin-bottom: 30px; 
     }
 }
 
@@ -808,7 +808,7 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
     object-fit: cover;
 }
 
-/* ========== INFO SECTION BELOW OVERVIEW ========== */
+/* ========== INFO SECTION That IS Below overview for casetudies ========== */
 .reverentblue-info {
     display: flex;
     justify-content: space-between;
@@ -913,7 +913,7 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
     margin-bottom: 20px;
 }
 
-/* ========== RESPONSIVE DESIGN ========== */
+/* ========== RESPONSIVE DESIGN FOR CASESTUDY 2 ========== */
 @media (max-width: 768px) {
     .reverentblue-content {
         padding: 20px;
@@ -950,7 +950,7 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
         height: auto;
     }
 
-    /* Ensure proper spacing for mobile */
+    /* proper spacing for mobile */
     .reverentblue-info {
         flex-direction: column;
         gap: 20px;
@@ -993,7 +993,7 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 }
 
 .project {
-    margin-bottom: 40px; /* Ensures extra space */
+    margin-bottom: 40px; 
 }
 
 .no-top-divider {
@@ -1003,36 +1003,36 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 /* Citation Page */
 
 .citations-container {
-    max-width: 1000px; /* Matches the header's max width */
-    margin: 0 auto; /* Centers content */
-    padding: 0 40px; /* Matches header's left and right padding */
+    max-width: 1000px;
+    margin: 0 auto; 
+    padding: 0 40px;
 }
 
 .citations-hero-content {
-    max-width: 1000px; /* Matches the header width */
-    margin: 0 auto; /* Centers content */
-    padding: 0 40px; /* Matches header's left and right padding */
-    text-align: left; /* Aligns title and subtitle to the left */
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding: 0 40px; 
+    text-align: left; 
 }
 
-/* Ensure spacing below title */
+/* For spacing below title */
 .citations-title {
-    margin-top: 80px; /* Moves title down for better spacing */
+    margin-top: 80px; 
     margin-bottom: 15px;
 }
 
-/* Ensure there is spacing between each section */
+/* Makes spacing between each section */
 .citations-heading {
-    margin-top: 50px; /* Increased space for better separation */
+    margin-top: 50px; 
     margin-bottom: 25px;
 }
 
-/* Add spacing between each reference item */
+/* spaces between reference items */
 .citation-item {
-    margin-bottom: 35px; /* Slightly increased space between citations */
+    margin-bottom: 35px; 
 }
 
-/* Add spacing between paragraphs */
+/* spacing between paragraphs */
 .citation-item p {
     margin-bottom: 12px;
 }

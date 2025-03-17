@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const backToTopButton = document.getElementById("backToTop");
 
-    if (backToTopButton) {  // Only runs if the button exists
+    if (backToTopButton) {  // Only runs if the button exists on the  html and css
         window.addEventListener("scroll", () => {
             if (window.scrollY > 300) {
                 backToTopButton.classList.add("show");
